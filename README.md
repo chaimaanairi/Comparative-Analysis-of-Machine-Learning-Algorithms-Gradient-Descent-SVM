@@ -47,16 +47,3 @@ SVM with Gaussian RBF clearly outperformed ANN models on this dataset.
 - ANN performance varied with network depth and optimization method.
 - Selecting the appropriate algorithm, parameters, and optimization technique is critical for model success.
 
-## Requirements
-- Python 3.x
-- numpy
-- pandas
-- scikit-learn
-
-## Files
-- `trainSoru2.py`, `trainSoru3.py` – Training scripts  
-- `models/` – Model definitions  
-- `dataset.py`, `dataset/` – Dataset generation and storage  
-- `eval.py` – Evaluation metrics  
-- `custom_metrics.py` – Custom metrics for analysis  
-- `results/` – Stores output results
