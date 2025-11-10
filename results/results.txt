@@ -1,0 +1,130 @@
+### dataset.py
+Eğitim Verisi: (%60) 240 örnek
+Doğrulama Verisi: (%20) 80 örnek
+Test Verisi: (%20) 80 örnek
+Dataset başarıyla oluşturuldu ve 'dataset' ile 'results' dizinine kaydedildi.
+
+### trainSoru2.py
+C:\Users\Hp\Python310\python.exe C:\Users\Hp\PycharmProjects\MakineÖğrenmesiOdev2\trainSoru2.py
+Stochastic Gradient Descent ile Eğitim Başlıyor...
+7315/7315 ━━━━━━━━━━━━━━━━━━━━ 3s 457us/step
+3/3 ━━━━━━━━━━━━━━━━━━━━ 0s 7ms/step
+1 Katmanlı Model (SGD, full-batch) Sonuçları:
+Confusion Matrix:
+[[34 17]
+ [ 3 26]]
+Accuracy: 0.7500, Precision: 0.6667, Recall: 0.9189, F1-Score: 0.7727
+
+7315/7315 ━━━━━━━━━━━━━━━━━━━━ 3s 435us/step
+3/3 ━━━━━━━━━━━━━━━━━━━━ 0s 7ms/step
+2 Katmanlı Model (SGD, full-batch) Sonuçları:
+Confusion Matrix:
+[[19 16]
+ [18 27]]
+Accuracy: 0.5750, Precision: 0.5429, Recall: 0.5135, F1-Score: 0.5278
+
+7315/7315 ━━━━━━━━━━━━━━━━━━━━ 3s 428us/step
+3/3 ━━━━━━━━━━━━━━━━━━━━ 0s 6ms/step
+3 Katmanlı Model (SGD, full-batch) Sonuçları:
+Confusion Matrix:
+[[37 32]
+ [ 0 11]]
+Accuracy: 0.6000, Precision: 0.5362, Recall: 1.0000, F1-Score: 0.6981
+
+Batch Gradient Descent ile Eğitim Başlıyor...
+7315/7315 ━━━━━━━━━━━━━━━━━━━━ 3s 444us/step
+3/3 ━━━━━━━━━━━━━━━━━━━━ 0s 7ms/step
+1 Katmanlı Model (SGD, batch_size=400) Sonuçları:
+Confusion Matrix:
+[[37 43]
+ [ 0  0]]
+Accuracy: 0.4625, Precision: 0.4625, Recall: 1.0000, F1-Score: 0.6325
+
+7315/7315 ━━━━━━━━━━━━━━━━━━━━ 3s 448us/step
+3/3 ━━━━━━━━━━━━━━━━━━━━ 0s 7ms/step
+2 Katmanlı Model (SGD, batch_size=400) Sonuçları:
+Confusion Matrix:
+[[ 0  0]
+ [37 43]]
+Accuracy: 0.5375, Precision: 0.0000, Recall: 0.0000, F1-Score: 0.0000
+
+7315/7315 ━━━━━━━━━━━━━━━━━━━━ 3s 439us/step
+3/3 ━━━━━━━━━━━━━━━━━━━━ 0s 7ms/step
+3 Katmanlı Model (SGD, batch_size=400) Sonuçları:
+Confusion Matrix:
+[[ 0  0]
+ [37 43]]
+Accuracy: 0.5375, Precision: 0.0000, Recall: 0.0000, F1-Score: 0.0000
+
+Mini Batch Gradient Descent ile Eğitim Başlıyor...
+7315/7315 ━━━━━━━━━━━━━━━━━━━━ 3s 428us/step
+3/3 ━━━━━━━━━━━━━━━━━━━━ 0s 7ms/step
+1 Katmanlı Model (SGD, batch_size=32) Sonuçları:
+Confusion Matrix:
+[[29  8]
+ [ 8 35]]
+Accuracy: 0.8000, Precision: 0.7838, Recall: 0.7838, F1-Score: 0.7838
+
+7315/7315 ━━━━━━━━━━━━━━━━━━━━ 3s 419us/step
+3/3 ━━━━━━━━━━━━━━━━━━━━ 0s 7ms/step
+2 Katmanlı Model (SGD, batch_size=32) Sonuçları:
+Confusion Matrix:
+[[28  6]
+ [ 9 37]]
+Accuracy: 0.8125, Precision: 0.8235, Recall: 0.7568, F1-Score: 0.7887
+
+7315/7315 ━━━━━━━━━━━━━━━━━━━━ 3s 463us/step
+3/3 ━━━━━━━━━━━━━━━━━━━━ 0s 6ms/step
+3 Katmanlı Model (SGD, batch_size=32) Sonuçları:
+Confusion Matrix:
+[[17 13]
+ [20 30]]
+Accuracy: 0.5875, Precision: 0.5667, Recall: 0.4595, F1-Score: 0.5075
+
+
+Process finished with exit code 0
+
+### trainSoru3.py
+C:\Users\Hp\Python310\python.exe C:\Users\Hp\PycharmProjects\MakineÖğrenmesiOdev2\trainSoru3.py
+Grid Search için linear kernel
+Fitting 5 folds for each of 12 candidates, totalling 60 fits
+En iyi parametreler: {'C': 1, 'degree': 2, 'gamma': 'scale'}
+Grid Search için poly kernel
+Fitting 5 folds for each of 12 candidates, totalling 60 fits
+En iyi parametreler: {'C': 10, 'degree': 3, 'gamma': 'auto'}
+Grid Search için rbf kernel
+Fitting 5 folds for each of 12 candidates, totalling 60 fits
+En iyi parametreler: {'C': 10, 'degree': 2, 'gamma': 'auto'}
+
+linear kernel için performans:
+Accuracy: 0.8000
+Precision: 0.7838
+Recall: 0.7838
+F1 Score: 0.7838
+
+poly kernel için performans:
+Accuracy: 0.8375
+Precision: 0.7727
+Recall: 0.9189
+F1 Score: 0.8395
+
+rbf kernel için performans:
+Accuracy: 0.9500
+Precision: 0.9714
+Recall: 0.9189
+F1 Score: 0.9444
+
+Process finished with exit code 0
+
+
+### eval.py
+C:\Users\Hp\Python310\python.exe C:\Users\Hp\PycharmProjects\MakineÖğrenmesiOdev2\eval.py
+3/3 ━━━━━━━━━━━━━━━━━━━━ 0s 13ms/step
+Doğruluk: 40.2250
+Precision: 0.4625
+Recall: 0.4625
+F1 Skoru: 0.4625
+6850/6850 ━━━━━━━━━━━━━━━━━━━━ 3s 399us/step
+
+
+Process finished with exit code 0
